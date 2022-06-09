@@ -1,0 +1,40 @@
+{
+  "name": "light-gallery-react",
+  "version": "1.1.6",
+  "description": "A light weighted gallery component used for React JS, Next JS frameworks, which is designed to showcase a set of images in a responsive way based on react-bootstrap",
+  "main": "./dist/index.js",
+  "private": false,
+  "scripts": {
+    "prepublish": "rm -rf ./dist && webpack --config webpack.config.js"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "reactjs",
+    "light",
+    "gallery",
+    "images",
+    "react-bootstrap",
+    "bootstrap",
+    "photos"
+  ],
+  "author": {
+    "name": "ethyang",
+    "email": "0han@pm.me"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "peerDependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
