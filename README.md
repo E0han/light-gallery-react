@@ -2,4 +2,4 @@
 
 ## Stable Version Installation
 
-`npm install light-gallery-react@1.1.8`
+`npm install light-gallery-react@1.1.9`
