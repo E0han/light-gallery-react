@@ -1,9 +1,9 @@
 import "@babel/register";
 import React from 'react';
-import {Item} from "./Item";
+import Item from "./Item";
 import {Row} from "react-bootstrap";
 
-export default function LightGallery({
+function LightGallery({
     lg_col=4,
     md_col=6,
     xs_col=6,
@@ -25,3 +25,6 @@ export default function LightGallery({
         </div>
     )
 }
+
+
+export default LightGallery;

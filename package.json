@@ -1,11 +1,18 @@
 {
   "name": "light-gallery-react",
-  "version": "1.1.6",
+  "version": "1.1.9",
   "description": "A light weighted gallery component used for React JS, Next JS frameworks, which is designed to showcase a set of images in a responsive way based on react-bootstrap",
-  "main": "./dist/index.js",
+  "main": "./dist/index.bundle.js",
   "private": false,
   "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "rm -rf ./dist && webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/E0han/light-gallery-react.git"
   },
   "keywords": [
     "react",
@@ -25,16 +32,27 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.11.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.18.2",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^4.2.0",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "@babel/register": "^7.17.7",
+    "@purtuga/esm-webpack-plugin": "^1.5.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "corejs": "^1.0.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
   },
   "peerDependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-bootstrap": "^2.4.0",
+    "react-dom": "^17.0.1"
   }
 }

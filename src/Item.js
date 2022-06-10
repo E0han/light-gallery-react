@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from "react";
 import { Col } from "react-bootstrap";
 
-export function Item({index,img_src, img_padding, lg_col,md_col,xs_col}){
+function Item({index,img_src, img_padding, lg_col,md_col,xs_col}){
     const [layout, setLayout] = useState({
         lg_col:lg_col,
         md_col:md_col,
@@ -30,3 +30,5 @@ export function Item({index,img_src, img_padding, lg_col,md_col,xs_col}){
         </Col>
     )
 }
+
+export default Item;
