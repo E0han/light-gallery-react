@@ -19,10 +19,39 @@
 ## Install
 
 ```sh
-npm install light-gallery-react@latest
+npm install light-gallery-react@latest --legacy-peer-deps
 ```
 
 ## Usage
+
+```js
+//...
+<LightGallery
+    lg_col={4},
+    md_col={6},
+    xs_col={6},
+    div_padding="5%",
+    img_padding="5%",
+    images=[
+      "path/to/img/1.png",
+      "path/to/img/2.png",
+      "path/to/img/3.png",
+      "path/to/img/4.png"
+      //...
+    ]
+></LightGallery>
+//...
+```
+
+>Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content. It’s built with flexbox and is fully responsive.
+
+lg_col: Integer out of 12 columns when the max container width ≥992px
+
+md_col: Integer out of 12 columns when the max container width ≥768px
+
+xs_col: Integer out of 12 columns when the max container width ≥576px
+
+Please check bootstrap documentation regarding to [Grid System](https://getbootstrap.com/docs/4.0/layout/grid/) for detailed information
 
 ```sh
 This module is built based on react and react-bootstrap, please ensure you have both of these modules installed
@@ -49,3 +78,6 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [ETHYANG TECH](https://github.com/E0han).<br />
 This project is [ISC](https://github.com/E0han/light-gallery-react/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

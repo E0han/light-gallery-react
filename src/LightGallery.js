@@ -4,7 +4,7 @@ import Item from "./Item";
 import {Row} from "react-bootstrap";
 
 function LightGallery({
-    lg_col=4,
+    lg_col=1,
     md_col=6,
     xs_col=6,
     div_padding="5%",
@@ -24,6 +24,15 @@ function LightGallery({
             </Row>
         </div>
     )
+}
+
+LightGallery.protoTypes = {
+    lg_col: PropTypes.number,
+    md_col: PropTypes.number,
+    xs_col: PropTypes.number,
+    div_padding: PropTypes.string,
+    img_padding: PropTypes.string,
+    images: PropTypes.array
 }
 
 
