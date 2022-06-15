@@ -49,6 +49,3 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2022 [ETHYANG TECH](https://github.com/E0han).<br />
 This project is [ISC](https://github.com/E0han/light-gallery-react/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
